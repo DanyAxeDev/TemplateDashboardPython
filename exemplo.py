@@ -1,11 +1,6 @@
 from dash import Dash, dcc, html, Input, Output
 import plotly.graph_objects as go
-import numpy as np
-import pandas as pd
 import mysql.connector
-from datetime import datetime
-import calendar
-from collections import Counter
 
 # Modelo básico para conexão com banco
 
@@ -152,14 +147,6 @@ app.layout = html.Div(children=[
                                 )]
                             ),
                         ]
-                    ),
-
-                    dcc.Checklist(
-                        lista_meses,
-                        lista_meses,
-                        inline=True,
-                        id='checklist-meses',
-                        style={'margin-top': '20px', 'margin-bottom': '20px'}
                     ),
 
                     dcc.Graph(
