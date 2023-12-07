@@ -13,7 +13,7 @@ conexao = mysql.connector.connect(
 
 cursor = conexao.cursor()
 
-comando_read = f'SELECT dthr_atendido FROM dsatendimentos WHERE dthr_atendido IS NOT NULL'
+comando_read = f'SELECT COLUNA FROM TABELA'
 cursor.execute(comando_read)
 resultado = cursor.fetchall() # Lendo o banco de dados
 
